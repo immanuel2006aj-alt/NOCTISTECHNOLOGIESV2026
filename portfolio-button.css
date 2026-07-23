@@ -1,0 +1,240 @@
+/*==================================================
+PORTFOLIO HERO BUTTONS
+==================================================*/
+
+.portfolio-hero-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-top:12px;
+
+}
+
+/*==================================================
+PRIMARY BUTTON
+==================================================*/
+
+.portfolio-hero-buttons .btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:56px;
+
+    padding:0 34px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    box-shadow:
+        0 18px 42px rgba(47,102,243,.22);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        filter .35s ease;
+
+}
+
+.portfolio-hero-buttons .btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    filter:brightness(1.05);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 28px 60px rgba(47,102,243,.32);
+
+}
+
+/*==================================================
+SECONDARY BUTTON
+==================================================*/
+
+.portfolio-hero-buttons .btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:56px;
+
+    padding:0 34px;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    color:var(--text) !important;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    box-shadow:var(--shadow-xs);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        color .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+
+}
+
+.portfolio-hero-buttons .btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--primary);
+
+    background:rgba(47,102,243,.05);
+
+    color:var(--primary) !important;
+
+    box-shadow:
+        0 16px 36px rgba(17,24,39,.10);
+
+}
+
+.portfolio-hero-buttons .btn-primary:active,
+.portfolio-hero-buttons .btn-secondary:active{
+
+    transform:scale(.98);
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:480px){
+
+    .portfolio-hero-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .portfolio-hero-buttons .btn-primary,
+    .portfolio-hero-buttons .btn-secondary{
+
+        width:100%;
+
+    }
+
+}
+/*==================================================
+PROJECT CARD BUTTON
+==================================================*/
+
+.project-footer .btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:50px;
+
+    padding:0 28px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-size:.88rem;
+
+    font-weight:700;
+
+    letter-spacing:.01em;
+
+    white-space:nowrap;
+
+    box-shadow:
+        0 14px 32px rgba(47,102,243,.20);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        filter .35s ease;
+
+}
+
+.project-footer .btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    filter:brightness(1.05);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 22px 48px rgba(47,102,243,.30);
+
+}
+
+.project-footer .btn-primary:active{
+
+    transform:scale(.98);
+
+}
+
+.project-footer .btn-primary:focus-visible{
+
+    outline:none;
+
+    box-shadow:
+        0 0 0 4px rgba(47,102,243,.18),
+        0 22px 48px rgba(47,102,243,.28);
+
+}
+
+@media(max-width:600px){
+
+    .project-footer .btn-primary{
+
+        width:100%;
+
+    }
+
+}

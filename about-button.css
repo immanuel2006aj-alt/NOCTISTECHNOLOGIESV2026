@@ -1,0 +1,656 @@
+/*==========================================
+ABOUT HERO BUTTONS
+==========================================*/
+
+.about-hero-buttons .btn-primary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:58px;
+    padding:0 34px;
+
+    border:none;
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-weight:600;
+
+    box-shadow:
+        0 16px 40px rgba(47,102,243,.25);
+
+    transition:all .35s ease;
+}
+
+.about-hero-buttons .btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 24px 50px rgba(47,102,243,.35);
+}
+
+.about-hero-buttons .btn-secondary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:58px;
+    padding:0 34px;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    color:var(--text) !important;
+
+    font-weight:600;
+
+    transition:all .35s ease;
+}
+
+.about-hero-buttons .btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+    color:var(--primary) !important;
+
+    border-color:var(--primary);
+
+    box-shadow:var(--shadow);
+}
+/*==========================================
+COMPANY OVERVIEW BUTTON
+==========================================*/
+
+.overview-content .btn-primary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:58px;
+    padding:0 34px;
+
+    border:none;
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-weight:600;
+
+    box-shadow:
+        0 16px 40px rgba(47,102,243,.25);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+}
+
+.overview-content .btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 24px 50px rgba(47,102,243,.35);
+}
+
+.overview-content .btn-primary:active{
+
+    transform:scale(.98);
+}
+
+@media(max-width:480px){
+
+    .overview-content .btn-primary{
+
+        width:100%;
+    }
+
+}
+/*==========================================
+WHY HIGHLIGHT BUTTON
+==========================================*/
+
+.why-highlight .btn-primary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:58px;
+    padding:0 34px;
+
+    border:none;
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-weight:600;
+
+    box-shadow:
+        0 16px 40px rgba(47,102,243,.25);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+}
+
+.why-highlight .btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 24px 50px rgba(47,102,243,.35);
+}
+
+.why-highlight .btn-primary:active{
+
+    transform:scale(.98);
+}
+
+@media(max-width:480px){
+
+    .why-highlight .btn-primary{
+
+        width:100%;
+    }
+
+}
+/*==========================================
+OUR EXPERTISE CTA BUTTON
+==========================================*/
+
+.expertise-cta .btn-secondary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:58px;
+    padding:0 34px;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    color:var(--text) !important;
+
+    font-weight:600;
+
+    box-shadow:var(--shadow-xs);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease,
+        color .35s ease;
+}
+
+.expertise-cta .btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+    color:var(--primary) !important;
+
+    border-color:var(--primary);
+
+    box-shadow:var(--shadow);
+}
+
+.expertise-cta .btn-secondary:active{
+
+    transform:scale(.98);
+}
+
+@media(max-width:480px){
+
+    .expertise-cta .btn-secondary{
+
+        width:100%;
+    }
+
+}
+/*==========================================
+FINAL CTA BUTTONS
+==========================================*/
+
+.final-cta-actions .btn-primary,
+.final-cta-actions .btn-secondary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:58px;
+    padding:0 34px;
+
+    border-radius:999px;
+
+    font-weight:600;
+    text-decoration:none;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease,
+        background .35s ease,
+        color .35s ease;
+}
+
+/* Primary */
+
+.final-cta-actions .btn-primary{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    border:none;
+
+    box-shadow:
+        0 16px 40px rgba(47,102,243,.25);
+}
+
+.final-cta-actions .btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 24px 50px rgba(47,102,243,.35);
+}
+
+/* Secondary */
+
+.final-cta-actions .btn-secondary{
+
+    background:#fff;
+
+    color:var(--text) !important;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-xs);
+}
+
+.final-cta-actions .btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+    color:var(--primary) !important;
+
+    border-color:var(--primary);
+
+    box-shadow:var(--shadow);
+}
+
+.final-cta-actions .btn-primary:active,
+.final-cta-actions .btn-secondary:active{
+
+    transform:scale(.98);
+}
+
+@media(max-width:480px){
+
+    .final-cta-actions{
+
+        display:flex;
+        flex-direction:column;
+        gap:16px;
+    }
+
+    .final-cta-actions .btn-primary,
+    .final-cta-actions .btn-secondary{
+
+        width:100%;
+    }
+
+}
+/*==================================================
+TEAM CULTURE LIST
+==================================================*/
+
+.team-culture-list{
+
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:18px;
+    margin-top:34px;
+
+}
+
+.team-culture-item{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    padding:20px 22px;
+
+    background:rgba(255,255,255,.85);
+    border:1px solid var(--border);
+    border-radius:20px;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+    box-shadow:var(--shadow-xs);
+
+}
+
+.team-culture-item:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(47,102,243,.22);
+
+    box-shadow:var(--shadow);
+
+}
+
+.team-culture-item span{
+
+    width:52px;
+    height:52px;
+
+    flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff;
+
+    font-size:.95rem;
+    font-weight:700;
+
+    box-shadow:
+        0 12px 28px rgba(47,102,243,.22);
+
+}
+
+.team-culture-item strong{
+
+    color:var(--text);
+
+    font-size:1rem;
+    font-weight:700;
+
+    line-height:1.5;
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+    .team-culture-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .team-culture-item{
+
+        padding:18px;
+
+        gap:15px;
+
+    }
+
+    .team-culture-item span{
+
+        width:46px;
+        height:46px;
+
+        font-size:.88rem;
+
+    }
+
+    .team-culture-item strong{
+
+        font-size:.94rem;
+
+    }
+
+}
+/*==========================================
+ABOUT TEAM CTA BUTTON
+==========================================*/
+
+.about-team-panel .btn-primary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-top:34px;
+
+    min-height:58px;
+    padding:0 34px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-size:.95rem;
+    font-weight:600;
+
+    text-decoration:none;
+
+    box-shadow:
+        0 16px 40px rgba(47,102,243,.25);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        filter .35s ease;
+
+}
+
+.about-team-panel .btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    filter:brightness(1.05);
+
+    box-shadow:
+        0 24px 50px rgba(47,102,243,.35);
+
+}
+
+.about-team-panel .btn-primary:active{
+
+    transform:scale(.98);
+
+}
+
+@media(max-width:480px){
+
+    .about-team-panel .btn-primary{
+
+        width:100%;
+
+    }
+
+}
+/*==========================================
+ABOUT CTA BUTTONS
+==========================================*/
+
+.about-cta-buttons{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+
+    margin-top:36px;
+
+}
+
+.about-cta-buttons .btn-primary,
+.about-cta-buttons .btn-secondary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:58px;
+    padding:0 34px;
+
+    border-radius:999px;
+
+    font-size:.95rem;
+    font-weight:600;
+    text-decoration:none;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease,
+        background .35s ease,
+        color .35s ease;
+
+}
+
+/* Primary Button */
+
+.about-cta-buttons .btn-primary{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff;
+
+    box-shadow:
+        0 16px 40px rgba(47,102,243,.25);
+
+}
+
+.about-cta-buttons .btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 24px 50px rgba(47,102,243,.35);
+
+}
+
+/* Secondary Button */
+
+.about-cta-buttons .btn-secondary{
+
+    background:#fff;
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-xs);
+
+}
+
+.about-cta-buttons .btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+    color:var(--primary);
+
+    border-color:var(--primary);
+
+    box-shadow:var(--shadow);
+
+}
+
+.about-cta-buttons .btn-primary:active,
+.about-cta-buttons .btn-secondary:active{
+
+    transform:scale(.98);
+
+}
+
+/*==========================================
+RESPONSIVE
+==========================================*/
+
+@media(max-width:576px){
+
+    .about-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .about-cta-buttons .btn-primary,
+    .about-cta-buttons .btn-secondary{
+
+        width:100%;
+
+    }
+
+}

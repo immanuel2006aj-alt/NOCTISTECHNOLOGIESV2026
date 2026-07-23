@@ -1,0 +1,376 @@
+/*==================================================
+NOCTIS BUTTON SYSTEM
+(EXCEPT NAVIGATION BUTTON)
+==================================================*/
+
+/*==========================================
+PRIMARY BUTTON
+==========================================*/
+
+.hero .btn-primary,
+.about-preview .btn-primary,
+.services-preview .btn-primary,
+.why-choose .btn-primary,
+.portfolio-preview .btn-primary,
+.process-preview .btn-primary,
+.pricing-preview .btn-primary,
+.testimonials .btn-primary,
+.faq .btn-primary,
+.cta .btn-primary,
+.contact-preview .btn-primary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    min-height:56px;
+    padding:0 32px;
+
+    border:none;
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-size:.96rem;
+    font-weight:600;
+
+    box-shadow:
+        0 14px 35px rgba(47,102,243,.22),
+        inset 0 1px 0 rgba(255,255,255,.18);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        background .35s ease;
+
+    position:relative;
+    overflow:hidden;
+    isolation:isolate;
+}
+
+.hero .btn-primary::before,
+.about-preview .btn-primary::before,
+.services-preview .btn-primary::before,
+.why-choose .btn-primary::before,
+.portfolio-preview .btn-primary::before,
+.process-preview .btn-primary::before,
+.pricing-preview .btn-primary::before,
+.testimonials .btn-primary::before,
+.faq .btn-primary::before,
+.cta .btn-primary::before,
+.contact-preview .btn-primary::before{
+
+    content:"";
+    position:absolute;
+    top:0;
+    left:-140%;
+    width:60%;
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+    transition:left .8s ease;
+}
+
+.hero .btn-primary:hover::before,
+.about-preview .btn-primary:hover::before,
+.services-preview .btn-primary:hover::before,
+.why-choose .btn-primary:hover::before,
+.portfolio-preview .btn-primary:hover::before,
+.process-preview .btn-primary:hover::before,
+.pricing-preview .btn-primary:hover::before,
+.testimonials .btn-primary:hover::before,
+.faq .btn-primary:hover::before,
+.cta .btn-primary:hover::before,
+.contact-preview .btn-primary:hover::before{
+
+    left:160%;
+}
+
+.hero .btn-primary:hover,
+.about-preview .btn-primary:hover,
+.services-preview .btn-primary:hover,
+.why-choose .btn-primary:hover,
+.portfolio-preview .btn-primary:hover,
+.process-preview .btn-primary:hover,
+.pricing-preview .btn-primary:hover,
+.testimonials .btn-primary:hover,
+.faq .btn-primary:hover,
+.cta .btn-primary:hover,
+.contact-preview .btn-primary:hover{
+
+    transform:translateY(-5px);
+    color:#fff !important;
+
+    box-shadow:
+        0 22px 45px rgba(47,102,243,.30);
+}
+
+.hero .btn-primary:active,
+.about-preview .btn-primary:active,
+.services-preview .btn-primary:active,
+.why-choose .btn-primary:active,
+.portfolio-preview .btn-primary:active,
+.process-preview .btn-primary:active,
+.pricing-preview .btn-primary:active,
+.testimonials .btn-primary:active,
+.faq .btn-primary:active,
+.cta .btn-primary:active,
+.contact-preview .btn-primary:active{
+
+    transform:scale(.98);
+}
+
+/*==========================================
+SECONDARY BUTTON
+==========================================*/
+
+.hero .btn-secondary,
+.about-preview .btn-secondary,
+.services-preview .btn-secondary,
+.why-choose .btn-secondary,
+.portfolio-preview .btn-secondary,
+.process-preview .btn-secondary,
+.pricing-preview .btn-secondary,
+.testimonials .btn-secondary,
+.faq .btn-secondary,
+.cta .btn-secondary,
+.contact-preview .btn-secondary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    min-height:56px;
+    padding:0 32px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid var(--border);
+
+    color:var(--text) !important;
+
+    font-size:.96rem;
+    font-weight:600;
+
+    transition:all .35s ease;
+
+    box-shadow:var(--shadow-xs);
+}
+
+.hero .btn-secondary:hover,
+.about-preview .btn-secondary:hover,
+.services-preview .btn-secondary:hover,
+.why-choose .btn-secondary:hover,
+.portfolio-preview .btn-secondary:hover,
+.process-preview .btn-secondary:hover,
+.pricing-preview .btn-secondary:hover,
+.testimonials .btn-secondary:hover,
+.faq .btn-secondary:hover,
+.cta .btn-secondary:hover,
+.contact-preview .btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--primary);
+
+    color:var(--primary) !important;
+
+    box-shadow:var(--shadow);
+}
+
+/*==========================================
+RESPONSIVE
+==========================================*/
+
+@media(max-width:768px){
+
+.hero .btn-primary,
+.hero .btn-secondary,
+.about-preview .btn-primary,
+.about-preview .btn-secondary,
+.services-preview .btn-primary,
+.services-preview .btn-secondary,
+.why-choose .btn-primary,
+.why-choose .btn-secondary,
+.portfolio-preview .btn-primary,
+.portfolio-preview .btn-secondary,
+.process-preview .btn-primary,
+.process-preview .btn-secondary,
+.pricing-preview .btn-primary,
+.pricing-preview .btn-secondary,
+.testimonials .btn-primary,
+.testimonials .btn-secondary,
+.faq .btn-primary,
+.faq .btn-secondary,
+.cta .btn-primary,
+.cta .btn-secondary,
+.contact-preview .btn-primary,
+.contact-preview .btn-secondary{
+
+    width:100%;
+}
+
+}
+/*==========================================
+FEATURED WORK / PORTFOLIO BUTTONS
+==========================================*/
+
+.portfolio-preview .btn-primary,
+.featured-work .btn-primary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    min-height:56px;
+    padding:0 32px;
+
+    border:none;
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-weight:600;
+
+    box-shadow:
+        0 14px 35px rgba(47,102,243,.22);
+
+    transition:.35s ease;
+
+    overflow:hidden;
+    position:relative;
+}
+
+.portfolio-preview .btn-primary:hover,
+.featured-work .btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 22px 45px rgba(47,102,243,.30);
+}
+
+.portfolio-preview .btn-secondary,
+.featured-work .btn-secondary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:56px;
+    padding:0 32px;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    color:var(--text) !important;
+
+    font-weight:600;
+
+    transition:.35s ease;
+}
+
+.portfolio-preview .btn-secondary:hover,
+.featured-work .btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--primary);
+
+    color:var(--primary) !important;
+
+    box-shadow:var(--shadow);
+}
+/*==========================================
+FINAL CTA BUTTONS
+==========================================*/
+/*==========================================
+PROCESS BOTTOM CTA BUTTON
+==========================================*/
+
+.process-bottom .btn-primary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:16px 34px;
+    min-height:58px;
+
+    border:none;
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+    text-decoration:none;
+
+    font-size:.96rem;
+    font-weight:600;
+
+    box-shadow:
+        0 16px 40px rgba(47,102,243,.25);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.process-bottom .btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 24px 48px rgba(47,102,243,.35);
+}
+
+.process-bottom .btn-primary:active{
+
+    transform:scale(.98);
+}
+
+@media (max-width:768px){
+
+.process-bottom .btn-primary{
+
+    width:100%;
+}
+
+}

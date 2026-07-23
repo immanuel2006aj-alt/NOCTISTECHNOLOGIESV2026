@@ -1,0 +1,920 @@
+/*==================================================
+SOLUTIONS HERO BUTTONS
+==================================================*/
+
+.solutions-hero-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    align-items:center;
+
+}
+
+/*==================================================
+PRIMARY BUTTON
+==================================================*/
+
+.solutions-hero-buttons .btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-height:58px;
+
+    padding:0 36px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-size:.96rem;
+    font-weight:700;
+
+    box-shadow:
+        0 18px 42px rgba(47,102,243,.22);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        filter .35s ease;
+
+}
+
+.solutions-hero-buttons .btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    filter:brightness(1.05);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 28px 60px rgba(47,102,243,.30);
+
+}
+
+/*==================================================
+SECONDARY BUTTON
+==================================================*/
+
+.solutions-hero-buttons .btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-height:58px;
+
+    padding:0 36px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.88);
+
+    border:1px solid var(--border);
+
+    color:var(--text) !important;
+
+    font-size:.96rem;
+    font-weight:700;
+
+    backdrop-filter:blur(18px);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.solutions-hero-buttons .btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--primary);
+
+    color:var(--primary) !important;
+
+    box-shadow:
+        0 16px 38px rgba(17,24,39,.10);
+
+}
+
+.solutions-hero-buttons .btn-primary:active,
+.solutions-hero-buttons .btn-secondary:active{
+
+    transform:scale(.98);
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:480px){
+
+    .solutions-hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .solutions-hero-buttons .btn-primary,
+    .solutions-hero-buttons .btn-secondary{
+
+        width:100%;
+
+    }
+
+}
+/*==================================================
+BUSINESS SOLUTION CARD BUTTONS
+==================================================*/
+
+.solution-card-action{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-top:auto;
+
+    padding-top:6px;
+
+}
+
+/*==================================================
+PRIMARY BUTTON
+==================================================*/
+
+.solution-card-action .btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-height:52px;
+
+    padding:0 28px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    box-shadow:
+        0 16px 36px rgba(47,102,243,.20);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        filter .35s ease;
+
+}
+
+.solution-card-action .btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    filter:brightness(1.05);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 24px 50px rgba(47,102,243,.30);
+
+}
+
+/*==================================================
+SECONDARY BUTTON
+==================================================*/
+
+.solution-card-action .btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-height:52px;
+
+    padding:0 28px;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    color:var(--text) !important;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.solution-card-action .btn-secondary:hover{
+
+    transform:translateY(-4px);
+
+    border-color:var(--primary);
+
+    color:var(--primary) !important;
+
+    box-shadow:
+        0 14px 32px rgba(17,24,39,.08);
+
+}
+
+.solution-card-action .btn-primary:active,
+.solution-card-action .btn-secondary:active{
+
+    transform:scale(.98);
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:480px){
+
+    .solution-card-action{
+
+        flex-direction:column;
+
+    }
+
+    .solution-card-action .btn-primary,
+    .solution-card-action .btn-secondary{
+
+        width:100%;
+
+    }
+
+}
+/*==================================================
+BOOKING CTA BUTTON
+==================================================*/
+
+.booking-action{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:38px;
+
+}
+
+.booking-action .btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-height:58px;
+
+    padding:0 38px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    letter-spacing:.01em;
+
+    box-shadow:
+        0 18px 42px rgba(47,102,243,.22);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        filter .35s ease;
+
+}
+
+.booking-action .btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    filter:brightness(1.05);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 28px 60px rgba(47,102,243,.34);
+
+}
+
+.booking-action .btn-primary:active{
+
+    transform:scale(.98);
+
+}
+
+.booking-action .btn-primary:focus-visible{
+
+    outline:none;
+
+    box-shadow:
+        0 0 0 4px rgba(47,102,243,.18),
+        0 24px 52px rgba(47,102,243,.28);
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:480px){
+
+    .booking-action{
+
+        width:100%;
+
+    }
+
+    .booking-action .btn-primary{
+
+        width:100%;
+
+    }
+
+}
+/*==================================================
+INDUSTRY CARD BUTTONS
+==================================================*/
+
+.industry-card-action{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-top:auto;
+
+    padding-top:6px;
+
+}
+
+/*==================================================
+PRIMARY BUTTON
+==================================================*/
+
+.industry-card-action .btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-height:52px;
+
+    padding:0 30px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    box-shadow:
+        0 16px 36px rgba(47,102,243,.22);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        filter .35s ease;
+
+}
+
+.industry-card-action .btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    filter:brightness(1.05);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 24px 52px rgba(47,102,243,.30);
+
+}
+
+/*==================================================
+SECONDARY BUTTON
+==================================================*/
+
+.industry-card-action .btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-height:52px;
+
+    padding:0 30px;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    color:var(--text) !important;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.industry-card-action .btn-secondary:hover{
+
+    transform:translateY(-4px);
+
+    border-color:var(--primary);
+
+    color:var(--primary) !important;
+
+    box-shadow:
+        0 14px 32px rgba(17,24,39,.08);
+
+}
+
+.industry-card-action .btn-primary:active,
+.industry-card-action .btn-secondary:active{
+
+    transform:scale(.98);
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:480px){
+
+    .industry-card-action{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .industry-card-action .btn-primary,
+    .industry-card-action .btn-secondary{
+
+        width:100%;
+
+    }
+
+}
+/*==================================================
+SPECIALIZED SOLUTION BUTTON
+==================================================*/
+
+.specialized-action{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-top:auto;
+
+    padding-top:8px;
+
+}
+
+/*==================================================
+SECONDARY BUTTON
+==================================================*/
+
+.specialized-action .btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    width:100%;
+
+    min-height:54px;
+
+    padding:0 28px;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    color:var(--text) !important;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    letter-spacing:.01em;
+
+    box-shadow:var(--shadow-xs);
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        color .35s ease,
+        background .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.specialized-action .btn-secondary:hover{
+
+    transform:translateY(-4px);
+
+    background:rgba(47,102,243,.05);
+
+    border-color:var(--primary);
+
+    color:var(--primary) !important;
+
+    box-shadow:
+        0 16px 36px rgba(17,24,39,.10);
+
+}
+
+.specialized-action .btn-secondary:active{
+
+    transform:scale(.98);
+
+}
+
+.specialized-action .btn-secondary:focus-visible{
+
+    outline:none;
+
+    box-shadow:
+        0 0 0 4px rgba(47,102,243,.16),
+        0 16px 36px rgba(17,24,39,.10);
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:480px){
+
+    .specialized-action{
+
+        width:100%;
+
+    }
+
+    .specialized-action .btn-secondary{
+
+        width:100%;
+
+    }
+
+}
+/*==================================================
+GLOBAL BUTTONS
+==================================================*/
+
+.btn-primary,
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:12px;
+
+    min-height:56px;
+
+    padding:0 34px;
+
+    border-radius:999px;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    line-height:1;
+
+    text-decoration:none;
+
+    white-space:nowrap;
+
+    cursor:pointer;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease,
+        background .35s ease,
+        color .35s ease,
+        filter .35s ease;
+
+}
+
+/*==================================================
+PRIMARY
+==================================================*/
+
+.btn-primary{
+
+    border:none;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    box-shadow:
+        0 18px 42px rgba(47,102,243,.22);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    filter:brightness(1.05);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 28px 60px rgba(47,102,243,.32);
+
+}
+
+.btn-primary:active{
+
+    transform:scale(.98);
+
+}
+
+/*==================================================
+SECONDARY
+==================================================*/
+
+.btn-secondary{
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    color:var(--text) !important;
+
+    box-shadow:var(--shadow-xs);
+
+}
+
+.btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+    background:rgba(47,102,243,.05);
+
+    border-color:var(--primary);
+
+    color:var(--primary) !important;
+
+    box-shadow:
+        0 16px 38px rgba(17,24,39,.10);
+
+}
+
+.btn-secondary:active{
+
+    transform:scale(.98);
+
+}
+
+/*==================================================
+FOCUS
+==================================================*/
+
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible{
+
+    outline:none;
+
+    box-shadow:
+        0 0 0 4px rgba(47,102,243,.18),
+        0 20px 45px rgba(47,102,243,.20);
+
+}
+
+/*==================================================
+DISABLED
+==================================================*/
+
+.btn-primary:disabled,
+.btn-secondary:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+    pointer-events:none;
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+
+    }
+
+}
+/*==================================================
+ADMIN PANEL CTA BUTTON
+==================================================*/
+
+.admin-panel-action{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:40px;
+
+}
+
+.admin-panel-action .btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-height:58px;
+
+    padding:0 38px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff !important;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    letter-spacing:.01em;
+
+    box-shadow:
+        0 18px 42px rgba(47,102,243,.22);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        filter .35s ease;
+
+}
+
+.admin-panel-action .btn-primary:hover{
+
+    transform:translateY(-5px);
+
+    filter:brightness(1.05);
+
+    color:#fff !important;
+
+    box-shadow:
+        0 28px 60px rgba(47,102,243,.34);
+
+}
+
+.admin-panel-action .btn-primary:active{
+
+    transform:scale(.98);
+
+}
+
+.admin-panel-action .btn-primary:focus-visible{
+
+    outline:none;
+
+    box-shadow:
+        0 0 0 4px rgba(47,102,243,.18),
+        0 22px 48px rgba(47,102,243,.28);
+
+}
+
+@media(max-width:480px){
+
+    .admin-panel-action{
+
+        width:100%;
+
+    }
+
+    .admin-panel-action .btn-primary{
+
+        width:100%;
+
+    }
+
+}
